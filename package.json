@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@svgr/cli": "^6.5.1",
     "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-loader": "^4.0.2",
@@ -32,10 +34,10 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "ts-node": "./src/api/mail.ts",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
+    "trans:svg": "npx @svgr/cli -d src/components/icons src/_svg",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

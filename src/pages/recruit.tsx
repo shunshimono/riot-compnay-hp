@@ -5,6 +5,6 @@ import Seo from "../components/seo"
 
 const RecruitPage = () => <Layout>Hello Recruit</Layout>
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Recruit" />
 
 export default RecruitPage

@@ -5,6 +5,6 @@ import Seo from "../components/seo"
 
 const NewsPage = () => <Layout>Hello News</Layout>
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="News" />
 
 export default NewsPage

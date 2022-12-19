@@ -5,6 +5,6 @@ import Seo from "../components/seo"
 
 const ServicePage = () => <Layout>Hello Service</Layout>
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Service" />
 
 export default ServicePage

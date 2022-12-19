@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { Header } from "./header"
 import { Footer } from "./footer"
+import "../css/destyle.css"
+import "../css/global.css"
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const data = useStaticQuery(graphql`

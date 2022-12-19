@@ -1,0 +1,20 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.6em;
+}
+@media screen and (max-width: 599px) {
+  body {
+    font-size: 1.4em;
+  }
+}
+h1 {
+  font-size: 5rem;
+}
+p {
+  font-size: 1.5rem;
+}
