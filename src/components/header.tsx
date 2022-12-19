@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }: any) => (
   <header
     style={{
       margin: `0 auto`,

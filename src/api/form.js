@@ -1,0 +1,30 @@
+const nodemailer = require("nodemailer")
+
+export default function formHandler(req, res) {
+  console.log(req, res)
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: "smtp.lolipop.jp",
+    auth: {
+      user: "s.shimono@riot-company.com",
+      pass: "Heisei-310123",
+    },
+    secure: true,
+  })
+
+  if (!req.body.email) {
+    return res.status(422).json("Email is required")
+  }
+
+  const mailData = {
+    from: "TEST Sender <mail@example.com>",
+    to: req.body.email ? req.body.email : "",
+    subject: "Thanks for the inquiry!",
+    html: req.body.emailBody ? `<p>${req.body.emailBody}</p>` : "Null message.",
+  }
+
+  const results = transporter
+    .sendMail(mailData)
+    .then(result => res.status(200).json(JSON.stringify(result)))
+    .catch(error => res.status(500).json(JSON.stringify(error)))
+}
