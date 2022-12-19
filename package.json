@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@emotion/react": "^11.10.5",
     "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-loader": "^4.0.2",
@@ -31,7 +32,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "ts-node":"./src/api/mail.ts",
+    "ts-node": "./src/api/mail.ts",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
