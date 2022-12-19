@@ -55,17 +55,17 @@ export const Header = ({ siteTitle }: any) => {
           {openMenu ? <OpendMenu /> : <ClosedMenu />}
         </HamburgerMenu>
         <MenuLink openMenu={openMenu}>
-          <nav>
+          <ul>
             {links.map(v => {
               return (
-                <li>
+                <Links>
                   <Link to={v.to} aria-label={v.label}>
                     {v.displayValue}
                   </Link>
-                </li>
+                </Links>
               )
             })}
-          </nav>
+          </ul>
         </MenuLink>
       </Wrapper>
     </NaviHeader>
@@ -76,6 +76,7 @@ const NaviHeader = styled.header`
   height: 76px;
   width: 100%;
   position: sticky;
+  z-index: 100;
   top: 0;
   left: 0;
   margin-bottom: -76px;
@@ -88,11 +89,11 @@ const Wrapper = styled.div<{ openMenu: boolean }>`
   align-items: center;
   height: 100%;
   padding: 0 1.6rem;
-  transition: all 0.25s;
   ${({ openMenu }) =>
     openMenu &&
     css`
-      background: red;
+      background: blue;
+      border-bottom: 1px solid yellow;
     `}
 `
 
@@ -104,7 +105,7 @@ const HamburgerMenu = styled.button`
   }
 `
 
-const MenuLink = styled.div<{ openMenu: boolean }>`
+const MenuLink = styled.nav<{ openMenu: boolean }>`
   position: absolute;
   top: 76px;
   background: blue;
@@ -112,11 +113,19 @@ const MenuLink = styled.div<{ openMenu: boolean }>`
   left: 0;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.25s;
   ${({ openMenu }) =>
     openMenu &&
     css`
       visibility: visible;
       opacity: 1;
     `}
+`
+
+const Links = styled.li`
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid yellow;
 `
