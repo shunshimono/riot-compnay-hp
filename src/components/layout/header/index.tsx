@@ -7,7 +7,7 @@ import { ClosedMenu, OpendMenu } from "../../icons"
 import { COLOR } from "../../constant/color"
 
 // @ts-ignore
-import logo from "../../../images/logo-v2.png"
+// import logo from "../../../images/logo-v2.png"
 
 const links = [
   {
@@ -52,8 +52,17 @@ export const Header = ({ siteTitle }: any) => {
   return (
     <NaviHeader>
       <Wrapper openMenu={openMenu}>
-        <Link to="/" aria-label="企業ロゴ">
-          <Logo src={logo as string}></Logo>
+        <Link
+          to="/"
+          aria-label="企業ロゴ"
+          activeStyle={{
+            fontSize: 20,
+            color: COLOR.LIGHT.code,
+            fontFamily: "BebasNeueRegular",
+            fontWeight: 700,
+          }}
+        >
+          Riot
         </Link>
         <HamburgerMenu name="メニュー" type="button" onClick={onClickMenu}>
           {openMenu ? <OpendMenu /> : <ClosedMenu />}
