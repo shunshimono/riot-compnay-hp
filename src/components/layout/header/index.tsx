@@ -56,13 +56,13 @@ export const Header = ({ siteTitle }: any) => {
           to="/"
           aria-label="企業ロゴ"
           activeStyle={{
-            fontSize: 20,
+            fontSize: 22,
             color: COLOR.LIGHT.code,
             fontFamily: "BebasNeueRegular",
             fontWeight: 700,
           }}
         >
-          Riot
+          Riot Co.
         </Link>
         <HamburgerMenu name="メニュー" type="button" onClick={onClickMenu}>
           {openMenu ? <OpendMenu /> : <ClosedMenu />}
