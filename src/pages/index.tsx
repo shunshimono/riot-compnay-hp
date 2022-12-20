@@ -6,6 +6,7 @@ import { Top } from "../components/top"
 import { Service } from "../components/service"
 import { About } from "../components/about"
 import { News } from "../components/news"
+import { From } from "../components/from"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Service></Service>
     <About></About>
     <News></News>
+    <From></From>
   </Layout>
 )
 
