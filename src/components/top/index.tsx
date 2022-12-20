@@ -30,13 +30,13 @@ const Wapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
-  height: calc(var(--1dvh, 1vh) * 100);
-  height: 100dvh;
+  height: calc(var(--1svh, 1vh) * 100);
+  height: 100svh;
   .static-image {
     width: 100% !important;
     height: 100vh !important;
-    height: calc(var(--1dvh, 1vh) * 100) !important;
-    height: 100dvh !important;
+    height: calc(var(--1svh, 1vh) * 100) !important;
+    height: 100svh !important;
   }
 `
 
@@ -64,8 +64,8 @@ const Heading = styled.div`
 const BackImg = styled.div`
   width: 100%;
   height: 100vh;
-  height: calc(var(--1dvh, 1vh) * 100);
-  height: 100dvh;
+  height: calc(var(--1svh, 1vh) * 100);
+  height: 100svh;
   top: 0;
   left: 0;
   position: absolute;
