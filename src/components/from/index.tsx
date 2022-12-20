@@ -1,4 +1,4 @@
-import React, { useState, ChangeEventHandler } from "react"
+import React, { useState, ChangeEventHandler, FormEventHandler } from "react"
 import styled from "@emotion/styled"
 import { COLOR } from "../constant/color"
 
@@ -12,11 +12,23 @@ export const From = () => {
     setValue({ ...value })
   }
 
+  const onSubmit: FormEventHandler<HTMLFormElement> = async e => {
+    console.log("onSubmit")
+    e.preventDefault()
+    const res = await fetch("/api/form", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(value),
+    })
+    console.log(res)
+  }
   return (
     <Wrapper>
       <Heading>お問い合わせ</Heading>
       <Card>
-        <form>
+        <form onSubmit={onSubmit}>
           <Label>
             <Title>メールアドレス</Title>
             <Input
@@ -24,7 +36,7 @@ export const From = () => {
               name="email"
               id="email"
               placeholder="（例）株式会社RIOT"
-              value={value["email"]}
+              value={value["email"] || ""}
               onChange={handleChange}
             />
           </Label>
@@ -33,7 +45,7 @@ export const From = () => {
             <Textarea
               name="emailBody"
               id="emailBody"
-              value={value["emailBody"]}
+              value={value["emailBody"] || ""}
               onChange={handleChange}
             />
           </Label>
