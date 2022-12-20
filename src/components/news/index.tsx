@@ -42,12 +42,12 @@ const Card = styled.div`
 `
 
 const Title = styled.div`
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   color: #999;
 `
 
 const Description = styled.div`
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   white-space: pre-wrap;
 `
 

@@ -51,7 +51,6 @@ const Heading = styled.div`
   padding-left: 20px;
   font-size: 18px;
   margin-bottom: 20px;
-  letter-spacing: 0.05em;
   position: relative;
   ::before {
     content: "";
@@ -72,11 +71,11 @@ const Card = styled.div`
 `
 
 const Title = styled.div`
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
 `
 
 const Description = styled.div`
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   white-space: pre;
 `
 

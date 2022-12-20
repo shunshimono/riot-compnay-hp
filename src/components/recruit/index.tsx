@@ -50,17 +50,17 @@ const Card = styled.div`
 `
 
 const Title = styled.div`
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   font-size: 16px;
   font-weight: 700;
   color: #999;
 `
 
 const Description = styled.div`
-  padding: 0 1.5em;
+  padding: 0 1.5rem;
   white-space: pre-wrap;
   :last-of-type {
-    padding: 1em 1.5em;
+    padding: 1rem 1.5rem;
   }
 `
 
@@ -68,5 +68,5 @@ const Container = styled.div``
 
 const Message = styled.div`
   white-space: pre-wrap;
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
 `

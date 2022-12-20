@@ -75,7 +75,7 @@ const Heading = styled.div`
 
 const Card = styled.div`
   margin-bottom: 20px;
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   background: ${COLOR.LIGHT.code};
 `
 
@@ -95,7 +95,7 @@ const Textarea = styled.textarea`
 `
 
 const Title = styled.div`
-  padding: 1em 0;
+  padding: 1rem 0;
 `
 
 const Label = styled.label`
@@ -103,7 +103,7 @@ const Label = styled.label`
 `
 
 const Button = styled.button`
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
   display: block;
   width: 100%;
   border-radius: 8px;

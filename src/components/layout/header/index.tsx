@@ -140,11 +140,10 @@ const Links = styled.li`
   height: 60px;
   display: flex;
   align-items: center;
-  font-size: 15px;
   font-weight: 700;
   font-family: "Oswald";
   color: ${COLOR.LIGHT.code};
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   justify-content: center;
   border-bottom: 1px solid ${COLOR.LIGHT.code};
 `

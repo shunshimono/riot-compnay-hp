@@ -67,13 +67,13 @@ const Card = styled.div`
   background: ${COLOR.LIGHT.code};
 `
 const Title = styled.div`
-  margin-top: 1.6em;
+  margin-top: 1.6rem;
   font-weight: bold;
   font-size: 16px;
 `
 
 const Description = styled.div`
-  margin-top: 1.4em;
+  margin-top: 1.4rem;
   font-size: 14px;
   font-weight: 300;
 `
