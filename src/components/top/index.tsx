@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image"
 export const Top = () => {
   return (
     <Wapper>
-      <StaticImage
+      {/* <StaticImage
         src="../../images/nagasaki.jpg"
         alt="トップ画像"
         placeholder="blurred"
@@ -18,7 +18,7 @@ export const Top = () => {
           width: "100%",
           height: "100vh",
         }}
-      />
+      /> */}
       <Heading>
         <div>{`MAKE\nLEARNIG.`}</div>
         <p>{`学ぶ環境をデザインする`}</p>
