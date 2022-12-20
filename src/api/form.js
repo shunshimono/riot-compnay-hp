@@ -16,8 +16,8 @@ export default function formHandler(req, res) {
   }
 
   const mailData = {
-    from: "TEST Sender <mail@example.com>",
-    to: req.body.email ? req.body.email : "",
+    from: req.body.email ? req.body.email : "",
+    to: process.env.MAIL,
     subject: "Thanks for the inquiry!",
     html: req.body.emailBody ? `<p>${req.body.emailBody}</p>` : "Null message.",
   }
