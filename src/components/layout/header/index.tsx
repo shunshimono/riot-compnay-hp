@@ -92,7 +92,8 @@ const Wrapper = styled.div<{ openMenu: boolean }>`
   ${({ openMenu }) =>
     openMenu &&
     css`
-      background: blue;
+      /* background: blue; */
+      background: white;
       border-bottom: 1px solid yellow;
     `}
 `
@@ -108,7 +109,7 @@ const HamburgerMenu = styled.button`
 const MenuLink = styled.nav<{ openMenu: boolean }>`
   position: absolute;
   top: 76px;
-  background: blue;
+  background: white;
   width: 100%;
   left: 0;
   visibility: hidden;

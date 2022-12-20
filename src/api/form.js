@@ -5,10 +5,6 @@ export default function formHandler(req, res) {
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.lolipop.jp",
-    auth: {
-      user: "s.shimono@riot-company.com",
-      pass: "Heisei-310123",
-    },
     secure: true,
   })
 
