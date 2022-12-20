@@ -30,6 +30,10 @@ export const About = () => {
           <Description>4名</Description>
         </Container>
         <Container>
+          <Title>資本金</Title>
+          <Description>1,000万円（2022年1月現在）</Description>
+        </Container>
+        <Container>
           <Title>役員構成</Title>
           <Description>代表取締役CEO:下野隼</Description>
         </Container>

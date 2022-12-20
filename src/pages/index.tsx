@@ -5,12 +5,14 @@ import Seo from "../components/seo"
 import { Top } from "../components/top"
 import { Service } from "../components/service"
 import { About } from "../components/about"
+import { News } from "../components/news"
 
 const IndexPage = () => (
   <Layout>
     <Top></Top>
     <Service></Service>
     <About></About>
+    <News></News>
   </Layout>
 )
 
