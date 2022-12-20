@@ -4,7 +4,6 @@ import { COLOR } from "../constant/color"
 
 export const From = () => {
   const [value, setValue] = useState<{ [key in string]: string }>({})
-  const [serverResponse, setServerResponse] = useState("")
 
   const handleChange: ChangeEventHandler<
     HTMLTextAreaElement | HTMLInputElement
@@ -90,7 +89,7 @@ const Input = styled.input`
 const Textarea = styled.textarea`
   background-color: #eee;
   width: 100%;
-  height: 80px;
+  height: 100px;
   resize: vertical;
   border-radius: 4px;
 `
@@ -104,9 +103,11 @@ const Label = styled.label`
 `
 
 const Button = styled.button`
-  margin-top: 1.5em;
+  margin: 1.5em 0;
   display: block;
   width: 100%;
+  border-radius: 8px;
+  height: 40px;
   text-align: center;
-  background-color: #eee;
+  background: #eee;
 `
