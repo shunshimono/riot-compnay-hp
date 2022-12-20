@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "@emotion/styled"
 // @ts-ignore
-import Test from "../../_movie/pexels-timo-volz-5544054.mp4"
+// import Test from "../../_movie/pexels-timo-volz-5544054.mp4"
 import { COLOR } from "../constant/color"
 
 export const Top = () => {
   return (
     <Wapper>
-      <StyledVideo src={Test} autoPlay muted loop></StyledVideo>
+      {/* <StyledVideo src={Test} autoPlay muted loop></StyledVideo> */}
       <Heading>
         <div>{`MAKE\nLEARNIG.`}</div>
         <p>{`学ぶ環境をデザインする`}</p>
@@ -62,5 +62,5 @@ const BackImg = styled.image`
   position: absolute;
   display: block;
   z-index: 1;
-  background-image: url("https://www.vlcholdings.com/images/filter.png");
+  /* background-image: url("https://www.vlcholdings.com/images/filter.png"); */
 `
