@@ -10,7 +10,7 @@ export const News = () => {
         <Container>
           <Title>お知らせ 2022.12.31</Title>
           <Description>
-            業績向上に伴い、資本金を400万から1000万に増額しました
+            業績向上に伴い、資本金を400万から1,000万に増額しました
           </Description>
         </Container>
         <Container>

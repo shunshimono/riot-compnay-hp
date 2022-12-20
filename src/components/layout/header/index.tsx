@@ -71,7 +71,7 @@ export const Header = ({ siteTitle }: any) => {
           <ul>
             {links.map(v => {
               return (
-                <Links>
+                <Links key={v.label}>
                   <Link to={v.to} aria-label={v.label}>
                     {v.displayValue}
                   </Link>
