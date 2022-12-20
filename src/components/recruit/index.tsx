@@ -23,7 +23,7 @@ export const Recruit = () => {
           <Description>{str}</Description>
           <Title>#営業採用</Title>
           <Description>{str3}</Description>
-          ※お問い合わせフォームよりご応募ください
+          <Description>※お問い合わせフォームよりご応募ください</Description>
         </Container>
       </Card>
     </Wrapper>
@@ -51,12 +51,17 @@ const Card = styled.div`
 
 const Title = styled.div`
   padding: 1em 1.5em;
+  font-size: 16px;
+  font-weight: 700;
   color: #999;
 `
 
 const Description = styled.div`
   padding: 0 1.5em;
   white-space: pre-wrap;
+  :last-of-type {
+    padding: 1em 1.5em;
+  }
 `
 
 const Container = styled.div``
