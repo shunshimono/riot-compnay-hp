@@ -6,6 +6,9 @@ import { Link } from "gatsby"
 import { ClosedMenu, OpendMenu } from "../../icons"
 import { COLOR } from "../../constant/color"
 
+// @ts-ignore
+import logo from "../../../images/logo-v2.png"
+
 const links = [
   {
     to: "/about",
@@ -50,7 +53,7 @@ export const Header = ({ siteTitle }: any) => {
     <NaviHeader>
       <Wrapper openMenu={openMenu}>
         <Link to="/" aria-label="企業ロゴ">
-          企業ロゴ
+          <Logo src={logo as string}></Logo>
         </Link>
         <HamburgerMenu name="メニュー" type="button" onClick={onClickMenu}>
           {openMenu ? <OpendMenu /> : <ClosedMenu />}
@@ -136,4 +139,8 @@ const Links = styled.li`
   letter-spacing: 0.2em;
   justify-content: center;
   border-bottom: 1px solid ${COLOR.LIGHT.code};
+`
+
+const Logo = styled.img`
+  width: 40px;
 `
