@@ -4,37 +4,38 @@ import { css } from "@emotion/react"
 import { Link } from "gatsby"
 
 import { ClosedMenu, OpendMenu } from "../../icons"
+import { COLOR } from "../../constant/color"
 
 const links = [
   {
     to: "/about",
     label: "私たちについて",
-    displayValue: "about",
+    displayValue: "ABOUT",
   },
   {
     to: "/news",
     label: "ニュース",
-    displayValue: "news",
+    displayValue: "NEWS",
   },
   {
     to: "/recruit",
     label: "採用情報",
-    displayValue: "recruit",
+    displayValue: "RECRUIT",
   },
   {
     to: "/service",
     label: "サービスについて",
-    displayValue: "service",
+    displayValue: "SERVICE",
   },
   {
     to: "/info",
     label: "会社概要",
-    displayValue: "info",
+    displayValue: "INFO",
   },
   {
     to: "/from",
     label: "お問合せ",
-    displayValue: "from",
+    displayValue: "FROM",
   },
 ]
 
@@ -79,6 +80,7 @@ const NaviHeader = styled.header`
   z-index: 100;
   top: 0;
   left: 0;
+
   margin-bottom: -76px;
 `
 
@@ -92,24 +94,24 @@ const Wrapper = styled.div<{ openMenu: boolean }>`
   ${({ openMenu }) =>
     openMenu &&
     css`
-      /* background: blue; */
-      background: white;
-      border-bottom: 1px solid yellow;
+      background: ${COLOR.RED.code};
+      border-bottom: 1px solid ${COLOR.LIGHT.code};
     `}
 `
 
 const HamburgerMenu = styled.button`
   display: block;
-  svg {
+  &&& svg {
     width: 20px;
     height: 20px;
+    fill: ${COLOR.LIGHT.code};
   }
 `
 
 const MenuLink = styled.nav<{ openMenu: boolean }>`
   position: absolute;
   top: 76px;
-  background: white;
+  background: ${COLOR.RED.code};
   width: 100%;
   left: 0;
   visibility: hidden;
@@ -127,6 +129,11 @@ const Links = styled.li`
   height: 60px;
   display: flex;
   align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Oswald";
+  color: ${COLOR.LIGHT.code};
+  letter-spacing: 0.2em;
   justify-content: center;
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid ${COLOR.LIGHT.code};
 `
