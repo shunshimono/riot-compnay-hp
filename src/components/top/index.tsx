@@ -4,23 +4,21 @@ import styled from "@emotion/styled"
 // import Test from "../../_movie/pexels-timo-volz-5544054.mp4"
 import { COLOR } from "../constant/color"
 import { StaticImage } from "gatsby-plugin-image"
+import "large-small-dynamic-viewport-units-polyfill"
 
 export const Top = () => {
   return (
     <Wapper>
-      {/* <StaticImage
+      <StaticImage
         src="../../images/nagasaki.jpg"
         alt="トップ画像"
         placeholder="blurred"
         layout="fixed"
         loading="eager"
-        style={{
-          width: "100%",
-          height: "100vh",
-        }}
-      /> */}
+        className="static-image"
+      />
       <Heading>
-        <div>{`MAKE\nLEARNIG.`}</div>
+        <div>{`MAKE\nLEARNIG.`}</div>""
         <p>{`学ぶ環境をデザインする`}</p>
       </Heading>
       <BackImg></BackImg>
@@ -32,6 +30,14 @@ const Wapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
+  height: calc(var(--1dvh, 1vh) * 100);
+  height: 100dvh;
+  .static-image {
+    width: 100% !important;
+    height: 100vh !important;
+    height: calc(var(--1dvh, 1vh) * 100) !important;
+    height: 100dvh !important;
+  }
 `
 
 const Heading = styled.div`
@@ -58,6 +64,8 @@ const Heading = styled.div`
 const BackImg = styled.div`
   width: 100%;
   height: 100vh;
+  height: calc(var(--1dvh, 1vh) * 100);
+  height: 100dvh;
   top: 0;
   left: 0;
   position: absolute;
