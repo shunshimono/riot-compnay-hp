@@ -50,38 +50,39 @@ export const Header = ({ siteTitle }: any) => {
   }, [])
 
   return (
-    <NaviHeader>
-      <Wrapper openMenu={openMenu}>
-        <Link
-          to="/"
-          aria-label="企業ロゴ"
-          activeStyle={{
-            fontSize: 20,
-            color: COLOR.LIGHT.code,
-            fontFamily: "BebasNeueRegular",
-            fontWeight: 700,
-          }}
-        >
-          Riot
-        </Link>
-        <HamburgerMenu name="メニュー" type="button" onClick={onClickMenu}>
-          {openMenu ? <OpendMenu /> : <ClosedMenu />}
-        </HamburgerMenu>
-        <MenuLink openMenu={openMenu}>
-          <ul>
-            {links.map(v => {
-              return (
-                <Links>
-                  <Link to={v.to} aria-label={v.label}>
-                    {v.displayValue}
-                  </Link>
-                </Links>
-              )
-            })}
-          </ul>
-        </MenuLink>
-      </Wrapper>
-    </NaviHeader>
+    <></>
+    // <NaviHeader>
+    //   <Wrapper openMenu={openMenu}>
+    //     <Link
+    //       to="/"
+    //       aria-label="企業ロゴ"
+    //       activeStyle={{
+    //         fontSize: 20,
+    //         color: COLOR.LIGHT.code,
+    //         fontFamily: "BebasNeueRegular",
+    //         fontWeight: 700,
+    //       }}
+    //     >
+    //       Riot
+    //     </Link>
+    //     <HamburgerMenu name="メニュー" type="button" onClick={onClickMenu}>
+    //       {openMenu ? <OpendMenu /> : <ClosedMenu />}
+    //     </HamburgerMenu>
+    //     <MenuLink openMenu={openMenu}>
+    //       <ul>
+    //         {links.map(v => {
+    //           return (
+    //             <Links>
+    //               <Link to={v.to} aria-label={v.label}>
+    //                 {v.displayValue}
+    //               </Link>
+    //             </Links>
+    //           )
+    //         })}
+    //       </ul>
+    //     </MenuLink>
+    //   </Wrapper>
+    // </NaviHeader>
   )
 }
 
