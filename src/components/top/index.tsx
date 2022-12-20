@@ -9,8 +9,8 @@ export const Top = () => {
   return (
     <Wapper>
       <StaticImage
-        src="../../images/sample.jpg"
-        alt="A dinosaur"
+        src="../../images/nagasaki.jpg"
+        alt="トップ画像"
         placeholder="blurred"
         layout="fixed"
         loading="eager"
@@ -32,18 +32,6 @@ const Wapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
-`
-
-const StyledVideo = styled.video`
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(
-    to bottom,
-    ${COLOR.DARK.code},
-    ${COLOR.LIGHT.code} 50%,
-    ${COLOR.DARK.code}
-  );
-  z-index: 0;
 `
 
 const Heading = styled.div`
@@ -75,5 +63,5 @@ const BackImg = styled.image`
   position: absolute;
   display: block;
   z-index: 1;
-  /* background-image: url("https://www.vlcholdings.com/images/filter.png"); */
+  background-image: url("https://www.vlcholdings.com/images/filter.png");
 `

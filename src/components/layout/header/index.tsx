@@ -83,7 +83,6 @@ const NaviHeader = styled.header`
   z-index: 100;
   top: 0;
   left: 0;
-
   margin-bottom: -76px;
 `
 
