@@ -18,7 +18,7 @@ export const Top = () => {
         className="static-image"
       />
       <Heading>
-        <div>{`MAKE\nLEARNIG.`}</div>""
+        <div>{`MAKE\nLEARNIG.`}</div>
         <p>{`学ぶ環境をデザインする`}</p>
       </Heading>
       <BackImg></BackImg>
