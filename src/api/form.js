@@ -1,10 +1,13 @@
 const nodemailer = require("nodemailer")
 
 export default function formHandler(req, res) {
-  console.log(req.body, process.env.MAIL)
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.lolipop.jp",
+    auth: {
+      user: process.env.MAIL,
+      pass: process.env.PASSWORD,
+    },
     secure: true,
   })
 
