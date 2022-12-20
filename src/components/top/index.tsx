@@ -55,7 +55,7 @@ const Heading = styled.div`
   }
 `
 
-const BackImg = styled.image`
+const BackImg = styled.div`
   width: 100%;
   height: 100vh;
   top: 0;
@@ -63,5 +63,8 @@ const BackImg = styled.image`
   position: absolute;
   display: block;
   z-index: 1;
-  background-image: url("https://www.vlcholdings.com/images/filter.png");
+  background-image: radial-gradient(#000 35%, transparent 36%),
+    radial-gradient(#000 35%, transparent 36%);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
 `

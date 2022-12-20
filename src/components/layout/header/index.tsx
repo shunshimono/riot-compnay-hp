@@ -148,7 +148,3 @@ const Links = styled.li`
   justify-content: center;
   border-bottom: 1px solid ${COLOR.LIGHT.code};
 `
-
-const Logo = styled.img`
-  width: 40px;
-`
